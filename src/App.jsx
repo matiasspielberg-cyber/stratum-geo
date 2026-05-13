@@ -82,7 +82,7 @@ export default function StratumGeoLandingPage() {
 
       <section className="relative min-h-screen overflow-hidden bg-white">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-60 grayscale contrast-125"
+          className="absolute inset-0 bg-cover bg-center opacity-80 grayscale contrast-125"
           style={{ backgroundImage: "url('/images/dem-terrain.jpg')", animation: "slowDrift 36s ease-in-out infinite" }}
         />
         <div className="absolute inset-0 bg-white/55 backdrop-blur-[1px]" />
