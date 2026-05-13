@@ -72,7 +72,7 @@ export default function StratumGeoLandingPage() {
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans selection:bg-slate-900 selection:text-white">
       <style>{`
-        @keyframes slowDrift { 0% { transform: scale(1) translateY(0); } 50% { transform: scale(1.04) translateY(-8px); } 100% { transform: scale(1) translateY(0); } }
+        @keyframes slowDrift { 0% { transform: scale(1.05) translateY(0); } 50% { transform: scale(1.12) translateY(-10px); } 100% { transform: scale(1.05) translateY(0); } }
         @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
         .fade-up { animation: fadeUp .85s ease both; }
         .delay-1 { animation-delay: .12s; }
@@ -82,11 +82,12 @@ export default function StratumGeoLandingPage() {
 
       <section className="relative min-h-screen overflow-hidden bg-white">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-[0.07] grayscale contrast-125"
+          className="absolute inset-0 bg-cover bg-center opacity-60 grayscale contrast-125"
           style={{ backgroundImage: "url('/images/dem-terrain.jpg')", animation: "slowDrift 36s ease-in-out infinite" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/70" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-[#f8fafc]" />
+        <div className="absolute inset-0 bg-white/55 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/65 to-white/35" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-[#f8fafc]" />
         <div className="absolute left-0 top-0 h-px w-full bg-slate-200" />
 
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-8">
@@ -129,7 +130,7 @@ export default function StratumGeoLandingPage() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
-              <a href="mailto:contact@stratumgeo.com" className="rounded-sm bg-slate-950 px-8 py-5 text-sm font-black uppercase tracking-wider text-white transition hover:-translate-y-1 hover:bg-slate-700">
+              <a href="mailto:contact@stratumgeology.com" className="rounded-sm bg-slate-950 px-8 py-5 text-sm font-black uppercase tracking-wider text-white transition hover:-translate-y-1 hover:bg-slate-700">
                 Request Consultation
               </a>
               <a href="#services" className="rounded-sm border border-slate-300 bg-white/70 px-8 py-5 text-sm font-black uppercase tracking-wider text-slate-800 transition hover:-translate-y-1 hover:border-slate-700">
@@ -224,9 +225,10 @@ export default function StratumGeoLandingPage() {
                 We help mining and exploration teams improve project KPIs through practical, field-focused geological and hydrogeological support.
               </p>
               <p>
-                Our goal is to increase productivity and effectiveness while keeping solutions cost-efficient and aligned with the operational realities of the mining industry. Safety and HSE are the centre of everything we do.
-                We understand that strong technical outcomes must go hand in hand with safe field execution, clear communication and responsible decision-making.
-                We work closely with clients to reduce uncertainty, solve practical and theoretical problems and support better decisions in the field and in the
+                Our goal is to increase productivity and effectiveness while keeping solutions cost-efficient and aligned with the operational realities of the mining industry. Safety and HSE are at the centre of everything we do.
+              </p>
+              <p>
+                We work closely with clients to reduce uncertainty, solve practical and technical problems, and support better decisions in the field and in the office.
               </p>
             </div>
           </div>
@@ -305,4 +307,3 @@ export default function StratumGeoLandingPage() {
     </div>
   )
 }
-
