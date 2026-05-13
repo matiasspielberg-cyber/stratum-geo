@@ -70,7 +70,7 @@ export default function StratumGeoLandingPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white text-slate-950 font-sans selection:bg-slate-900 selection:text-white">
+    <div className="min-h-screen bg-[#F7F8FA] text-[#1F2933] font-sans selection:bg-[#0B1F3A] selection:text-white">
       <style>{`
         @keyframes slowDrift { 0% { transform: scale(1.05) translateY(0); } 50% { transform: scale(1.12) translateY(-10px); } 100% { transform: scale(1.05) translateY(0); } }
         @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
@@ -80,19 +80,19 @@ export default function StratumGeoLandingPage() {
         .delay-3 { animation-delay: .36s; }
       `}</style>
 
-      <section className="relative min-h-screen overflow-hidden bg-white">
+      <section className="relative min-h-screen overflow-hidden bg-[#F7F8FA]">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-80 grayscale contrast-125"
+          className="absolute inset-0 bg-cover bg-center opacity-75 grayscale contrast-125"
           style={{ backgroundImage: "url('/images/dem-terrain.jpg')", animation: "slowDrift 36s ease-in-out infinite" }}
         />
-        <div className="absolute inset-0 bg-white/55 backdrop-blur-[1px]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/65 to-white/35" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-[#f8fafc]" />
-        <div className="absolute left-0 top-0 h-px w-full bg-slate-200" />
+        <div className="absolute inset-0 bg-[#F7F8FA]/45 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F7F8FA]/95 via-[#F7F8FA]/72 to-[#0B1F3A]/18" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/65 via-transparent to-[#F7F8FA]" />
+        <div className="absolute left-0 top-0 h-px w-full bg-[#D9DEE5]" />
 
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-8">
           <div className="flex items-center gap-4">
-            <div className="grid h-12 w-12 place-items-center text-slate-800">
+            <div className="grid h-12 w-12 place-items-center text-[#0B1F3A]">
               <svg viewBox="0 0 48 48" className="h-11 w-11" fill="none" stroke="currentColor" strokeWidth="2.2">
                 <path d="M7 14 24 6l17 8-17 8L7 14Z" />
                 <path d="M7 24 24 16l17 8" />
@@ -100,107 +100,107 @@ export default function StratumGeoLandingPage() {
               </svg>
             </div>
             <div>
-              <div className="text-3xl font-black uppercase tracking-[0.18em]">Stratum</div>
-              <div className="text-sm font-bold uppercase tracking-[0.18em] text-slate-500">Geological Services</div>
+              <div className="text-3xl font-black uppercase tracking-[0.18em] text-[#1A1D21]">Stratum</div>
+              <div className="text-sm font-bold uppercase tracking-[0.18em] text-[#52616F]">Geological Services</div>
             </div>
           </div>
 
-          <nav className="hidden items-center gap-10 text-sm font-bold uppercase tracking-widest text-slate-500 md:flex">
-            <a href="#" className="border-b border-slate-900 pb-3 text-slate-950">Home</a>
-            <a href="#services" className="transition hover:text-slate-950">Services</a>
-            <a href="#about" className="transition hover:text-slate-950">About</a>
-            <a href="#contact" className="transition hover:text-slate-950">Contact</a>
+          <nav className="hidden items-center gap-10 text-sm font-bold uppercase tracking-widest text-[#52616F] md:flex">
+            <a href="#" className="border-b border-[#0B1F3A] pb-3 text-[#0B1F3A]">Home</a>
+            <a href="#services" className="transition hover:text-[#0B1F3A]">Services</a>
+            <a href="#about" className="transition hover:text-[#0B1F3A]">About</a>
+            <a href="#contact" className="transition hover:text-[#0B1F3A]">Contact</a>
           </nav>
         </header>
 
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-16 px-6 pb-24 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:pt-36">
           <div className="fade-up">
-            <p className="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-500">
+            <p className="mb-6 text-sm font-black uppercase tracking-[0.22em] text-[#0B1F3A]">
               Geological & Hydrogeological Consulting
             </p>
 
-            <h1 className="max-w-4xl text-6xl font-black leading-[0.98] tracking-[-0.055em] md:text-8xl">
+            <h1 className="max-w-4xl text-6xl font-black leading-[0.98] tracking-[-0.055em] text-[#1A1D21] md:text-8xl">
               Stratum
               <span className="block">Geological</span>
               <span className="block">Services</span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-lg leading-8 text-slate-600">
+            <p className="mt-8 max-w-xl text-lg leading-8 text-[#52616F]">
               Practical, transparent geological support for exploration and mining projects across Western Australia.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
-              <a href="mailto:contact@stratumgeology.com" className="rounded-sm bg-slate-950 px-8 py-5 text-sm font-black uppercase tracking-wider text-white transition hover:-translate-y-1 hover:bg-slate-700">
+              <a href="mailto:contact@stratumgeology.com" className="rounded-sm bg-[#0B1F3A] px-8 py-5 text-sm font-black uppercase tracking-wider text-white transition hover:-translate-y-1 hover:bg-[#173B66]">
                 Request Consultation
               </a>
-              <a href="#services" className="rounded-sm border border-slate-300 bg-white/70 px-8 py-5 text-sm font-black uppercase tracking-wider text-slate-800 transition hover:-translate-y-1 hover:border-slate-700">
+              <a href="#services" className="rounded-sm border border-[#B8C1CC] bg-white/75 px-8 py-5 text-sm font-black uppercase tracking-wider text-[#0B1F3A] transition hover:-translate-y-1 hover:border-[#0B1F3A] hover:bg-white">
                 View Services
               </a>
             </div>
           </div>
 
-          <div className="fade-up delay-2 rounded-sm border border-slate-200 bg-white/85 p-10 shadow-xl shadow-slate-200/70 backdrop-blur-sm transition hover:border-slate-400">
-            <p className="mb-4 text-sm font-black uppercase tracking-[0.22em] text-slate-500">Technical Consulting</p>
-            <div className="mb-8 h-px w-28 bg-slate-300" />
+          <div className="fade-up delay-2 rounded-sm border border-[#D9DEE5] bg-white/88 p-10 shadow-xl shadow-[#0B1F3A]/10 backdrop-blur-sm transition hover:border-[#0B1F3A]/40">
+            <p className="mb-4 text-sm font-black uppercase tracking-[0.22em] text-[#0B1F3A]">Technical Consulting</p>
+            <div className="mb-8 h-px w-28 bg-[#0B1F3A]/35" />
 
-            <h2 className="text-4xl font-black leading-tight tracking-tight">
+            <h2 className="text-4xl font-black leading-tight tracking-tight text-[#1A1D21]">
               Clear interpretation. Practical field support. Better decisions.
             </h2>
 
-            <div className="mt-10 grid grid-cols-2 border-t border-slate-200 text-slate-600">
-              <div className="border-b border-r border-slate-200 p-6 pl-0 transition hover:bg-slate-50">
+            <div className="mt-10 grid grid-cols-2 border-t border-[#D9DEE5] text-[#0B1F3A]">
+              <div className="border-b border-r border-[#D9DEE5] p-6 pl-0 transition hover:bg-[#F1F4F7]">
                 <MapIcon />
-                <div className="mt-4 text-2xl font-black uppercase text-slate-950">WA</div>
-                <div className="mt-1 text-slate-500">Pilbara • Yilgarn</div>
+                <div className="mt-4 text-2xl font-black uppercase text-[#1A1D21]">WA</div>
+                <div className="mt-1 text-[#52616F]">Pilbara • Yilgarn</div>
               </div>
-              <div className="border-b border-slate-200 p-6 transition hover:bg-slate-50">
+              <div className="border-b border-[#D9DEE5] p-6 transition hover:bg-[#F1F4F7]">
                 <PickIcon />
-                <div className="mt-4 text-2xl font-black uppercase text-slate-950">Gold</div>
-                <div className="mt-1 text-slate-500">Exploration Support</div>
+                <div className="mt-4 text-2xl font-black uppercase text-[#1A1D21]">Gold</div>
+                <div className="mt-1 text-[#52616F]">Exploration Support</div>
               </div>
-              <div className="border-r border-slate-200 p-6 pl-0 transition hover:bg-slate-50">
+              <div className="border-r border-[#D9DEE5] p-6 pl-0 transition hover:bg-[#F1F4F7]">
                 <DropIcon />
-                <div className="mt-4 text-2xl font-black uppercase text-slate-950">Hydro</div>
-                <div className="mt-1 text-slate-500">Groundwater Systems</div>
+                <div className="mt-4 text-2xl font-black uppercase text-[#1A1D21]">Hydro</div>
+                <div className="mt-1 text-[#52616F]">Groundwater Systems</div>
               </div>
-              <div className="p-6 transition hover:bg-slate-50">
+              <div className="p-6 transition hover:bg-[#F1F4F7]">
                 <LensIcon />
-                <div className="mt-4 text-2xl font-black uppercase text-slate-950">Field</div>
-                <div className="mt-1 text-slate-500">Site-Based Work</div>
+                <div className="mt-4 text-2xl font-black uppercase text-[#1A1D21]">Field</div>
+                <div className="mt-1 text-[#52616F]">Site-Based Work</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" className="bg-[#f8fafc] px-6 py-28">
+      <section id="services" className="bg-[#EEF2F6] px-6 py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-16 border-b border-slate-200 pb-16 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="grid gap-16 border-b border-[#D9DEE5] pb-16 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="fade-up">
-              <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-slate-500">Services</p>
-              <h2 className="max-w-xl text-5xl font-black leading-[1.02] tracking-tight md:text-6xl">
+              <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-[#0B1F3A]">Services</p>
+              <h2 className="max-w-xl text-5xl font-black leading-[1.02] tracking-tight text-[#1A1D21] md:text-6xl">
                 Simple, useful, field-ready services.
               </h2>
             </div>
-            <p className="fade-up delay-1 max-w-2xl text-lg leading-9 text-slate-600">
+            <p className="fade-up delay-1 max-w-2xl text-lg leading-9 text-[#52616F]">
               Practical geological and hydrogeological support for teams that need clear answers and reliable field execution.
             </p>
           </div>
 
           <div className="grid gap-5 pt-16 md:grid-cols-2 xl:grid-cols-3">
             {services.map((service, index) => (
-              <div key={service.title} className={`fade-up delay-${(index % 3) + 1} rounded-sm border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:border-slate-400 hover:shadow-xl hover:shadow-slate-200/80`}>
-                <div className="mb-6 text-slate-600">{service.icon}</div>
-                <h3 className="text-2xl font-black">{service.title}</h3>
-                <p className="mt-4 leading-7 text-slate-600">{service.desc}</p>
+              <div key={service.title} className={`fade-up delay-${(index % 3) + 1} rounded-sm border border-[#D9DEE5] bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:border-[#0B1F3A]/45 hover:shadow-xl hover:shadow-[#0B1F3A]/10`}>
+                <div className="mb-6 text-[#0B1F3A]">{service.icon}</div>
+                <h3 className="text-2xl font-black text-[#1A1D21]">{service.title}</h3>
+                <p className="mt-4 leading-7 text-[#52616F]">{service.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-20 grid gap-8 border-t border-slate-200 pt-16 md:grid-cols-4">
+          <div className="mt-20 grid gap-8 border-t border-[#D9DEE5] pt-16 md:grid-cols-4">
             {["Practical", "Responsive", "Client Focused", "Field Ready"].map((item) => (
-              <div key={item} className="border-l border-slate-300 pl-5">
-                <div className="text-sm font-black uppercase tracking-[0.18em] text-slate-700">{item}</div>
+              <div key={item} className="border-l border-[#0B1F3A]/35 pl-5">
+                <div className="text-sm font-black uppercase tracking-[0.18em] text-[#0B1F3A]">{item}</div>
               </div>
             ))}
           </div>
@@ -209,15 +209,15 @@ export default function StratumGeoLandingPage() {
 
       <section id="about" className="bg-white px-6 py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-20 border-b border-slate-200 pb-20 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="grid gap-20 border-b border-[#D9DEE5] pb-20 lg:grid-cols-[0.8fr_1.2fr]">
             <div className="fade-up">
-              <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-slate-500">About Stratum Geo</p>
-              <h2 className="max-w-xl text-5xl font-black leading-[1.02] tracking-tight md:text-6xl">
+              <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-[#0B1F3A]">About Stratum Geo</p>
+              <h2 className="max-w-xl text-5xl font-black leading-[1.02] tracking-tight text-[#1A1D21] md:text-6xl">
                 Small team. Practical mindset.
               </h2>
             </div>
 
-            <div className="fade-up delay-1 space-y-7 text-lg leading-9 text-slate-600">
+            <div className="fade-up delay-1 space-y-7 text-lg leading-9 text-[#52616F]">
               <p>
                 Stratum Geology Services is a team of five geological professionals with experience in gold exploration, hydrogeology, GIS, project generation and field problem solving.
               </p>
@@ -236,61 +236,61 @@ export default function StratumGeoLandingPage() {
           <div className="grid gap-8 pt-16 md:grid-cols-3">
             {cards.map((card, index) => (
               <div key={card.title} className={`fade-up delay-${index + 1} group`}>
-                <div className="overflow-hidden rounded-sm border border-slate-200 bg-white shadow-sm">
+                <div className="overflow-hidden rounded-sm border border-[#D9DEE5] bg-white shadow-sm">
                   <img src={card.image} alt={card.title} className="h-64 w-full object-cover grayscale contrast-105 transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
                 </div>
-                <h3 className="mt-7 text-lg font-black uppercase tracking-wide">{card.title}</h3>
-                <p className="mt-4 leading-7 text-slate-600">{card.desc}</p>
+                <h3 className="mt-7 text-lg font-black uppercase tracking-wide text-[#1A1D21]">{card.title}</h3>
+                <p className="mt-4 leading-7 text-[#52616F]">{card.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="contact" className="bg-[#f8fafc] px-6 py-28">
+      <section id="contact" className="bg-[#EEF2F6] px-6 py-28">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="fade-up">
-            <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-slate-500">Contact</p>
-            <h2 className="max-w-xl text-5xl font-black leading-[1.02] tracking-tight md:text-6xl">
+            <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-[#0B1F3A]">Contact</p>
+            <h2 className="max-w-xl text-5xl font-black leading-[1.02] tracking-tight text-[#1A1D21] md:text-6xl">
               Need site-based geological support?
             </h2>
-            <p className="mt-8 max-w-2xl text-lg leading-9 text-slate-600">
+            <p className="mt-8 max-w-2xl text-lg leading-9 text-[#52616F]">
               Available for FIFO and site-based support across Western Australia, including the Pilbara, Yilgarn and Kalgoorlie regions.
             </p>
 
-            <div className="mt-14 grid gap-10 border-t border-slate-200 pt-12 md:grid-cols-2">
+            <div className="mt-14 grid gap-10 border-t border-[#D9DEE5] pt-12 md:grid-cols-2">
               <div>
-                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-slate-700">Contact</div>
-                <div className="space-y-2 text-lg text-slate-700">
+                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-[#0B1F3A]">Contact</div>
+                <div className="space-y-2 text-lg text-[#52616F]">
                   <div>Matias Spielberg / Geologist</div>
                   <div>+61 428 987 515</div>
                   <div>contact@stratumgeology.com</div>
                 </div>
               </div>
               <div>
-                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-slate-700">Regions</div>
-                <div className="text-lg text-slate-700">Pilbara • Yilgarn • Kalgoorlie</div>
+                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-[#0B1F3A]">Regions</div>
+                <div className="text-lg text-[#52616F]">Pilbara • Yilgarn • Kalgoorlie</div>
               </div>
               <div>
-                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-slate-700">Availability</div>
-                <div className="text-lg text-slate-700">FIFO & Site-Based Support</div>
+                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-[#0B1F3A]">Availability</div>
+                <div className="text-lg text-[#52616F]">FIFO & Site-Based Support</div>
               </div>
               <div>
-                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-slate-700">Support</div>
-                <div className="text-lg text-slate-700">Logging • Sampling • Mapping • Wells</div>
+                <div className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-[#0B1F3A]">Support</div>
+                <div className="text-lg text-[#52616F]">Logging • Sampling • Mapping • Wells</div>
               </div>
             </div>
           </div>
 
-          <div className="fade-up delay-2 rounded-sm border border-slate-200 bg-white p-10 shadow-sm transition hover:border-slate-400 hover:shadow-xl hover:shadow-slate-200/80">
-            <p className="mb-8 text-sm font-black uppercase tracking-[0.22em] text-slate-500">Send an Inquiry</p>
+          <div className="fade-up delay-2 rounded-sm border border-[#D9DEE5] bg-white p-10 shadow-sm transition hover:border-[#0B1F3A]/45 hover:shadow-xl hover:shadow-[#0B1F3A]/10">
+            <p className="mb-8 text-sm font-black uppercase tracking-[0.22em] text-[#0B1F3A]">Send an Inquiry</p>
             <div className="grid gap-6">
-              <input type="text" placeholder="Name" className="border border-slate-200 bg-white px-5 py-5 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-500" />
-              <input type="text" placeholder="Company" className="border border-slate-200 bg-white px-5 py-5 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-500" />
-              <input type="email" placeholder="Email" className="border border-slate-200 bg-white px-5 py-5 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-500" />
-              <input type="text" placeholder="Project / Inquiry" className="border border-slate-200 bg-white px-5 py-5 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-500" />
-              <textarea rows="6" placeholder="Tell us about your project" className="border border-slate-200 bg-white px-5 py-5 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-slate-500" />
-              <button className="mt-4 rounded-sm bg-slate-950 px-8 py-5 text-sm font-black uppercase tracking-wider text-white transition hover:-translate-y-1 hover:bg-slate-700">
+              <input type="text" placeholder="Name" className="border border-[#D9DEE5] bg-white px-5 py-5 text-[#1A1D21] outline-none transition placeholder:text-slate-400 focus:border-[#0B1F3A]" />
+              <input type="text" placeholder="Company" className="border border-[#D9DEE5] bg-white px-5 py-5 text-[#1A1D21] outline-none transition placeholder:text-slate-400 focus:border-[#0B1F3A]" />
+              <input type="email" placeholder="Email" className="border border-[#D9DEE5] bg-white px-5 py-5 text-[#1A1D21] outline-none transition placeholder:text-slate-400 focus:border-[#0B1F3A]" />
+              <input type="text" placeholder="Project / Inquiry" className="border border-[#D9DEE5] bg-white px-5 py-5 text-[#1A1D21] outline-none transition placeholder:text-slate-400 focus:border-[#0B1F3A]" />
+              <textarea rows="6" placeholder="Tell us about your project" className="border border-[#D9DEE5] bg-white px-5 py-5 text-[#1A1D21] outline-none transition placeholder:text-slate-400 focus:border-[#0B1F3A]" />
+              <button className="mt-4 rounded-sm bg-[#0B1F3A] px-8 py-5 text-sm font-black uppercase tracking-wider text-white transition hover:-translate-y-1 hover:bg-[#173B66]">
                 Submit Inquiry
               </button>
             </div>
@@ -298,9 +298,9 @@ export default function StratumGeoLandingPage() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white px-6 py-10">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 text-sm text-slate-500 md:flex-row">
-          <div className="font-black uppercase tracking-[0.18em] text-slate-950">STRATUM <span className="text-slate-500">GEOLOGY</span></div>
+      <footer className="border-t border-[#D9DEE5] bg-white px-6 py-10">
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 text-sm text-[#52616F] md:flex-row">
+          <div className="font-black uppercase tracking-[0.18em] text-[#1A1D21]">STRATUM <span className="text-[#0B1F3A]">GEOLOGY</span></div>
           <div>© 2026 Stratum Geology Services. All rights reserved.</div>
         </div>
       </footer>
